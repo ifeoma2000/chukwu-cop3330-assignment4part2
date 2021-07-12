@@ -1,0 +1,34 @@
+@startuml
+'https://plantuml.com/class-diagram
+
+
+
+class ListItem {
++ toString() : String
+}
+class ListController {
+Type_Date : TextField
+clear : Button
+remove : Button
+add_item : Button
+load : Button
+save : Button
+edit : Button
+toggle_completed_items : Checkbox
++ initialize() : void
+- clear() : void
++ edit(): void
++ addAction(): void
++ deleteAction(): void
+- toggleComplete():void
+- save():void
+- load():void
+- hideCompletedItems():void
+}
+class ListLauncher {
++ main():void
++ start():void
+}
+javafx.Application <|-- ListLauncher
+ListItem - ListController
+@enduml

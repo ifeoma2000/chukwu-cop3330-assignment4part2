@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.CheckBox?>
+<?import javafx.scene.control.ListView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.control.TitledPane?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<TitledPane animated="false" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="800.0" text="ToDo List " xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="ucf.assignments.ListController">
+    <content>
+        <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="461.0" prefWidth="0.0">
+            <children>
+                <Button layoutX="683.0" layoutY="538.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" onMouseClicked="#save" prefHeight="22.0" prefWidth="45.0" text="save" />
+                <Button layoutX="633.0" layoutY="537.0" mnemonicParsing="false" onMouseClicked="#load" prefHeight="24.0" prefWidth="41.0" text="load" />
+                <ListView fx:id="ToDo_List" layoutX="18.0" layoutY="12.0" onMouseClicked="#toggleComplete" prefHeight="517.0" prefWidth="763.0" />
+                <Button layoutX="553.0" layoutY="537.0" mnemonicParsing="false" onMouseClicked="#addAction" prefHeight="26.0" prefWidth="69.0" text="add item" />
+                <TextField fx:id="Type_Date" layoutX="347.0" layoutY="536.0" prefHeight="26.0" prefWidth="104.0" promptText="Type Date" />
+                <TextField fx:id="Type_Description" layoutX="215.0" layoutY="536.0" prefHeight="26.0" prefWidth="122.0" promptText="Type Description" />
+                <Button layoutX="138.0" layoutY="535.0" mnemonicParsing="false" onMouseClicked="#deleteAction" prefHeight="28.0" prefWidth="58.0" text="remove" />
+                <Button layoutX="730.0" layoutY="537.0" mnemonicParsing="false" onMouseClicked="#edit" text="edit" />
+                <CheckBox fx:id="toggle_completed_items" layoutY="541.0" mnemonicParsing="false" onMouseClicked="#hideCompletedItems" text="Toggle Completed" />
+                <Button fx:id="clear" layoutX="471.0" layoutY="537.0" mnemonicParsing="false" onMouseClicked="#clear" text="Clear" />
+            </children></AnchorPane>
+    </content>
+</TitledPane>
